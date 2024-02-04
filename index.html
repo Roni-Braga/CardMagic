@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-Magic</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel='icon' href='imagens/carta.svg' type='image/x-icon' sizes="16x16" />
+</head>
+<body>
+    <main>
+        <aside>
+            <div class="visualizacao" >
+                <img  src="imagens/carta.svg" alt="imagem da carta" id="imagem-visualizada">
+                
+            </div>
+            <div class="underline"></div>
+            <div class="carrosel">
+                
+                    <img src="imagens/icone - left.svg" alt="" id="setas">
+                 <div class="carrosel-imagens">
+                   
+                        <li><input type="radio" name="opcao" id="0-imagem" onclick="trocarImagem()"><label for="0-imagem"><img src="imagens/imagem-0.svg" alt="" srcset="" id="0-imagem-miniatura"></label></li>
+                        <li><input type="radio" name="opcao" id="1-imagem" onclick="trocarImagem()"  checked><label for="1-imagem"><img src="imagens/imagem-1.svg" alt="" srcset="" id="1-imagem-miniatura"></label></li>
+                        <li><input type="radio" name="opcao" id="2-imagem" onclick="trocarImagem()"><label for="2-imagem"><img src="imagens/imagem-2.svg" alt="" srcset="" id="2-imagem-miniatura"></label></li>
+
+                </div>
+                    <img src="imagens/icone-right.svg" alt="" id="setas">
+              
+            </div>
+        </aside>
+        <section>
+            <div class="info-card">
+                <div class="navegacao">
+                    <nav>
+                        <ul>
+                            <li class="menu-home"><a href="">Home</a></li>
+                            <li><a href="">Magic: The Gathering</a></li>
+                            <li><a href="">Busca</a></li>
+                            <li class="menu-bazar"><a href="">Bazar - Lista de Desejos</a></li>
+                        </ul>
+                    </nav>
+            </div>
+                <div class="titulo">
+                    <div class="titulo-dmr">
+                        <img src="imagens/icone-tituto.svg" alt="">
+                        <label for="titulo-copy"><b>#045</b> Dominaria Remastered</label>
+                       
+                   </div>
+                    <div class="DMR">
+
+                        <select name="dmr" id="options-dmr">
+                            <option>DMR</option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="nome-carta">
+                    <div class="contramagic">
+
+                        <h4>Contramágica</h4>
+                        <p>Counterspell</p>
+                    </div>
+                    <div class="like">
+                      <img src="imagens/like.svg" alt="" name="opcao-img"  id="like">
+                     
+                        <img src="imagens/opcoes.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="compras-card">
+                    <div class="titulo-compras">
+                        <h4>Lista de Compras<img src="imagens/icone-interrogacao.png" alt="" width="20"></h4>                       
+                        <p>Add a carta aqui e deixe que a Liga calcule o melhor preço para você!</p>
+                    </div>
+                    <div class="compras">
+                    <div class="qtd-compras">
+
+                        <img src="imagens/mais.png" alt="" onclick="AdicionarValor()" > 
+                        <input type="number" min=0 class="btn-adicionar" id="total">
+                        <img src="imagens/menos.png" alt="" onclick="MenosValor()">
+                        
+                        <img src="imagens/botao-mobile.svg" alt="" id="imagem-mobile">
+                    </div>
+                    <button><img src="imagens/icone-adicionar.png" alt="">ADICIONAR NA LISTA</button>
+                </div>
+            </div>
+            <div class="detalhes">
+               <div class="detalhes-carta">
+                    <div class="titulo-carta">
+                       
+                        <h4>Detalhes da Carta</h4>
+                         <a href="">Ver Tudo</a>
+                    </div>
+                        <div class="Cor">
+                        <p>Cor</p>
+                        <p class="color-carta">Azul</p>
+                    </div>
+                    <div class="Custo">
+                        <p>Custo de Mana</p>
+                        <div class="mana">
+
+                            <img src="imagens/icone-mana.png" alt="">
+                            <img src="imagens/icone-mana.png" alt="">
+                        </div>
+                    </div>
+                    <div class="Tipo">
+                        <p>Tipo</p>
+                        <p><b>Mágica Instantânea</b></p>
+                    </div>
+               </div>
+               <div class="preco-Marketplace">
+                    <div  class="Marketplace-titulo">
+
+                        <h4>Preço Médio no Marketplace<img src="imagens/icone-interrogacao.png" alt="" width="20"></h4>
+                        <a href="">Ver Tudo</a>
+                    </div>
+                    <div class="status">
+                        <div class="classificacao">
+                            <img src="imagens/Vector.png" alt="">
+                            <p>Normal</p>
+                        </div>
+                        <div class="precos">
+                            <p>R$ 6,28</p>
+                            <p>R$ 9,39</p>
+                            <p>R$ 14,00</p>
+                        </div>
+
+                    </div>
+               </div> 
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
